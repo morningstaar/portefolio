@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SILUE Gnenema Bertrand</title>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <nav class="nom">
+                <div>
+                    <a href="#" class="nav__logo">Bertrand SILUE</a>
+                </div>
+
+                <div id="nav-menu">
+                    <ul class="list_lien">
+                        <li class="item"><a href="#home" class="lien">Acceuil</a></li>
+                        <li class="item"><a href="#about" class="lien">A propos</a></li>
+                        <li class="item"><a href="#work" class="lien">projets</a></li>
+                        <li class="item"><a href="#contact" class="lien">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="apropos">
+            <h1>Bonjour, je suis SILUE Gnenema Bertrand, developpeur web et mobile</h1>
+        </div>
+        <div class="projets">
+            <ul class="liste_projets">
+                <li class="projet">conception et realisation d'un model de reconnaissance de maladies</li>
+                <li class="projet">developpement d'un site de e-commerce</li>
+                <li class="projet">conception d'un parking intelligent</li>
+            </ul>
+            <div class="carousel">
+                <button type="button" class="bouton" id="bouton_gauche" onclick="changerImage(-1)"> gauche</button>
+                <img src="assets/img/can.jpg" alt="can" id="imageCarousel">
+                <button type="button" class="bouton" id="bouton_droit" onclick="changerImage(1)">droite</button>
+
+            </div>
+            <div class="contact">
+                <h2>Contactez-moi</h2>
+                <form action="form.php" method="post">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+    
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <footer class="footer">
+                    <ul class="reseaux">
+                        <li class="insta">@Bertrand_s</li>
+                        <li class="tel">+33 0744858798</li>
+                        <li class="mail">gnenemabertrand1@gmail.com</li>
+                    </ul>    
+
+    
+                <p class="copyright">
+                    Copyright &copy; Bertrand SILUE. Tous droits reservés
+                </p>
+            </footer>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <?php 
+      include("form.php"); 
+    ?>
+</body>
+</html>
